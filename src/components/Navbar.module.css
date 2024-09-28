@@ -1,0 +1,93 @@
+.nav {
+    background-color: #141619;
+    color: white;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Distribuye horizontalmente */
+    padding: 5px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegúrate de que el navbar quede encima */
+}
+
+.buttons-container {
+    display: flex; /* Coloca los botones en fila */
+    gap: 20px; /* Añade espacio entre los botones */
+}
+
+.buttons-container a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Asegura que el color del texto sea el mismo que el del botón */
+}
+
+.buttons-container button {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px 30px;
+    border: 2px solid #1e182b;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 170px;
+    display: flex;
+    flex-direction: column; /* Coloca el texto y la imagen en columna */
+    align-items: center; /* Centra horizontalmente el contenido */
+    cursor: pointer;
+    position: relative; /* Necesario para usar el pseudo-elemento */
+    overflow: hidden; /* Oculta el pseudo-elemento fuera del botón */
+}
+
+.buttons-container button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%; /* Inicia fuera del botón a la derecha */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 73, 91, 0.5); /* Color del fondo al hacer hover, semitransparente */
+    transition: left 0.5s ease; /* Transición suave de entrada (derecha a izquierda) */
+    z-index: 0; /* Asegúrate de que esté debajo del contenido */
+}
+
+.buttons-container button:hover::before {
+    left: 0; /* Mueve el pseudo-elemento desde la derecha hacia el centro */
+    transition: left 0.5s ease; /* Animación de entrada (derecha a izquierda) */
+}
+
+.buttons-container button::before {
+    left: -100%; /* Sale hacia la izquierda */
+    transition: left 0.2s ease; /* Transición rápida de salida (izquierda a derecha) */
+}
+
+.buttons-container button:hover {
+    border-color: white; /* Cambia el color del borde al hacer hover */
+}
+
+.buttons-container button span {
+    position: relative; /* Mantén el texto por encima del pseudo-elemento */
+    z-index: 1; /* Asegúrate de que el texto esté por encima */
+}
+
+.buttons-container button.active {
+    background-color: #141619; /* Cambia el color de fondo del botón activo */
+    border-color: white; /* Cambia el color del borde del botón activo */
+    color: white; /* Cambia el color del texto del botón activo */
+    cursor: default; /* Cambia el cursor para indicar que está activo */
+    /* Elimina la animación y el pseudo-elemento para los botones activos */
+    pointer-events: none; /* Desactiva la interacción con los botones activos */
+}
+
+.buttons-container button.active::before {
+    content: none; /* No se muestra el pseudo-elemento en los botones activos */
+    transition: none; /* Elimina cualquier transición para el estado activo */
+}
+
+.button-image {
+    margin-top: 5px; /* Espacio entre el texto y la imagen */
+    width: 40px; /* Ajusta el tamaño de la imagen según necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}

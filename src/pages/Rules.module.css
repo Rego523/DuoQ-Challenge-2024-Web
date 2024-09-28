@@ -1,0 +1,36 @@
+.container {
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 4em;
+    color: white;
+    width: 100%; /* Asegura que el encabezado ocupe el ancho completo */
+    margin-bottom: 60px;
+    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+    font-weight: bold; /* Hace que el título sea más audaz */
+    letter-spacing: 0.1em; /* Añade un pequeño espaciado entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade una sombra al texto */
+    animation: fadeIn 0.5s ease-in-out; /* Añade una animación suave al aparecer */
+}
+
+/* Animación para el título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,26 @@
+.dígito {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    min-width: 50px; /* Para asegurar que los dígitos estén bien alineados */
+}
+
+.dos-puntos {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    min-width: 15px; /* Ajustar el ancho para los dos puntos */
+}

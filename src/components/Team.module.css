@@ -1,0 +1,63 @@
+.team p.win {
+    color: green !important;
+    font-weight: bold;
+}
+
+.team p.lost {
+    color: red !important;
+    font-weight: bold;
+}
+
+.team {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 100px 200px 150px 150px 100px 100px 100px 200px 100px; /* Definir columnas con anchos fijos */
+    align-items: center;
+    gap: 10px; /* Espacio entre columnas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.team p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Trunca el texto si es demasiado largo */
+}
+
+.team p:first-child {
+    font-weight: bold; /* Destaca el rango */
+}
+
+.link-box a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Añadir transición para suavizar el cambio */
+}
+  
+/* Cambiar el fondo y color del texto al pasar el cursor */
+.link-box a:hover {
+background-color: #f0f0f0;
+padding: 10px;
+border-radius: 500px;
+color: #ff4500;
+}
+
+.elo-text {
+    position: relative;
+    top: 2px; /* Ajusta la cantidad que necesitas */
+    display: inline-block;
+}
+
+.tier-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    vertical-align: middle; /* Alinea la imagen con el texto */
+}
