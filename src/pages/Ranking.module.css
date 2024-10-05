@@ -59,3 +59,26 @@
     text-overflow: ellipsis; /* Trunca el texto si es demasiado largo */
 }
 
+.team-names {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 200px 250px 250px; /* Definir columnas con anchos fijos */
+    align-items: center;
+    gap: 10px; /* Espacio entre columnas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.team-names p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Trunca el texto si es demasiado largo */
+}
