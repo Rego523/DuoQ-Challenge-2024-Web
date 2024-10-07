@@ -19,11 +19,6 @@ const teamsNames = [
         name2: 'Antonetiiii (Cacahuetes)',
     },
     {
-        teamName: 'Esmeralda 4 peak',
-        name1: 'Mercurio (The Notorius)',
-        name2: 'Only (Vennolyesil)',
-    },
-    {
         teamName: 'LSI Enjoyer', 
         name1: 'Brais (Ctarlizzahky)',
         name2: '',
@@ -32,6 +27,11 @@ const teamsNames = [
         teamName: 'Mental Buda',
         name1: 'Rego (Ndeariggyphy)',
         name2: 'Pericles (Ragabodnerzs)',
+    },
+    {
+        teamName: 'Team Dif',
+        name1: 'Mercurio (The Notorius)',
+        name2: 'Only (Vennolyesil)',
     },
     {
         teamName: 'Team Leo',
