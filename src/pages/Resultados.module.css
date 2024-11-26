@@ -23,14 +23,26 @@
     animation: fadeIn 0.5s ease-in-out; /* Añade una animación suave al aparecer */
 }
 
-/* Animación para el título */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.team-header {
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 100px 200px 150px 150px 100px 100px 100px 200px 100px; /* Definir columnas con anchos fijos */
+    align-items: center;
+    gap: 10px; /* Espacio entre columnas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinear el contenido al centro */
+}
+
+.team-header p {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Trunca el texto si es demasiado largo */
 }
